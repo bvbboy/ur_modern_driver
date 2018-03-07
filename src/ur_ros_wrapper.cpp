@@ -93,7 +93,7 @@ public:
 					rt_msg_cond_, msg_cond_, host, reverse_port), io_flag_delay_(0.05), joint_offsets_(
 					6, 0.0) {
 
-		        // RG2 gripper
+		// RG2 gripper
         rg2_service = nh_.advertiseService<ur_modern_driver::RG2::Request, ur_modern_driver::RG2::Response>
                 ("/rg2_gripper/control_width", boost::bind(&UrDriver::rg2Callback, &robot_, _1, _2));
         // RG2 Grip_Detect

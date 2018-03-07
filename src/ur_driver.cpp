@@ -368,7 +368,7 @@ bool UrDriver::rg2Callback(ur_modern_driver::RG2::Request &req, ur_modern_driver
 //    }
 //    else
 //        rg2Control(10, 0, 0, false, false, false);
-    rg2Control(req.target_width.data, 0, 0, false, false, false);
+    rg2Control(req.target_width, 0, 0, false, false, false);
     return true;
 }
 
